@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ACADGILD</title>
+    <!--Link to StyleSheet-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="#">Acadgild</a>
+            </h1>
+            <nav>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <h4>Home</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/about.html">
+                            <h4>About</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h4>Contact</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h4 id="social">Social</h4>
+                            <div class="arrow"></div>
+                            <ul>
+                                <li>Twitter</li>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>Snapchat</li>
+                                <li>Tumblr</li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end of ul of main nav-->
+            </nav>
+            <!--end of nav-->
+        </div>
+        <!--end of container-->
+    </header>
+    <main>
+        <section id='form-container'>
+            <h3>Registration and Login Form</h3>
+            <h4>Enter the system</h4>
+            <p>It is necessary to login to your account in order to signup for a Course.</p>
+            <div class="form-group">
+                <form id="registerForm" method="Post" autocomplete="on">
+                    <h5>Are you New? <span>Register</span></h5>
+                    <div id="input-container">
+                        <p>
+                            <input type="text" name="username" class="username" placeholder="Username" required maxlength="10" minlength="3">
+                        </p>
+                        <p>
+                            <input type="email" name="email" id="email" placeholder="email" required>
+                        </p>
+                        <p>
+                            <input type="password" name="password" class="password" placeholder="password" required minlength="6" maxlength="10">
+                        </p>
+                        <p>
+                            <input type="password" name="confirm-password" id="confirm-password" placeholder="confirm password" required minlength="6" maxlength="10">
+                        </p>
+                        <p class="clearfix">
+                            <input type="submit" value="Register" name="register" id='register'>
+                        </p>
+                    </div>
+                </form>
+                <form id="loginForm" method="Post" autocomplete="on">
+                    <h5>Already a student? Login</h5>
+                    <p>
+                        <input type="text" name="username" class="username" placeholder="username" required maxlength="10" minlength="3">
+                    </p>
+                    <p>
+                        <input type="password" name="password" class="password" placeholder="password" required minlength="6" maxlength="10">
+                    </p>
+                    <p id="checkbox">
+                        <input type="checkbox" name="remember-me" id="remember-me" checked="checked">
+                        <label for="remember-me">Remember me?</label>
+                    </p>
+                    <p class="clearfix" id="loginBtn">
+                        <input type="submit" value="Login" id="login" name="login">
+                    </p>
+                    <p id="forgotPass">
+                        <a href="#">Forgot Password?</a>
+                    </p>
+                </form>
+                <!-- form group ends here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <center><small>©Copyright 2017 programmers inc.</small></center>
+        </p>
+    </footer>
+    <!--Link to Javascript-->
+    <script src="../javascript/scripts1.js"></script>
+</body>
+
+</html>
